@@ -51,6 +51,9 @@ open class TriggerTestBase : TestBaseWithProfile() {
             if (it is TriggerTimeRange) {
                 it.dateUtil = dateUtil
             }
+            if (it is TriggerRecurringDay) {
+                it.dateUtil = dateUtil
+            }
             if (it is TriggerRecurringTime) {
                 it.dateUtil = dateUtil
             }

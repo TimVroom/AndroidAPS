@@ -59,6 +59,7 @@ import app.aaps.plugins.automation.triggers.TriggerIob
 import app.aaps.plugins.automation.triggers.TriggerLocation
 import app.aaps.plugins.automation.triggers.TriggerProfilePercent
 import app.aaps.plugins.automation.triggers.TriggerPumpLastConnection
+import app.aaps.plugins.automation.triggers.TriggerRecurringDay
 import app.aaps.plugins.automation.triggers.TriggerRecurringTime
 import app.aaps.plugins.automation.triggers.TriggerTempTarget
 import app.aaps.plugins.automation.triggers.TriggerTempTargetValue
@@ -384,6 +385,7 @@ class AutomationPlugin @Inject constructor(
         return listOf(
             TriggerConnector(injector),
             TriggerTime(injector),
+            TriggerRecurringDay(injector),
             TriggerRecurringTime(injector),
             TriggerTimeRange(injector),
             TriggerBg(injector),

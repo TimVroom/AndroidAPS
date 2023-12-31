@@ -41,6 +41,7 @@ import app.aaps.plugins.automation.triggers.TriggerIob
 import app.aaps.plugins.automation.triggers.TriggerLocation
 import app.aaps.plugins.automation.triggers.TriggerProfilePercent
 import app.aaps.plugins.automation.triggers.TriggerPumpLastConnection
+import app.aaps.plugins.automation.triggers.TriggerRecurringDay
 import app.aaps.plugins.automation.triggers.TriggerRecurringTime
 import app.aaps.plugins.automation.triggers.TriggerTempTarget
 import app.aaps.plugins.automation.triggers.TriggerTempTargetValue
@@ -82,6 +83,7 @@ abstract class AutomationModule {
     @ContributesAndroidInjector abstract fun triggerProfilePercentInjector(): TriggerProfilePercent
     @ContributesAndroidInjector abstract fun triggerPumpLastConnectionInjector(): TriggerPumpLastConnection
     @ContributesAndroidInjector abstract fun triggerBTDeviceInjector(): TriggerBTDevice
+    @ContributesAndroidInjector abstract fun triggerRecurringDayInjector(): TriggerRecurringDay
     @ContributesAndroidInjector abstract fun triggerRecurringTimeInjector(): TriggerRecurringTime
     @ContributesAndroidInjector abstract fun triggerTempTargetInjector(): TriggerTempTarget
     @ContributesAndroidInjector abstract fun triggerTempTargetValueInjector(): TriggerTempTargetValue
